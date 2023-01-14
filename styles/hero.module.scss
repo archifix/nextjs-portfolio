@@ -1,0 +1,27 @@
+.hero {
+  position: relative;
+  height: 945px;
+  padding-top: 135px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 98px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 101px;
+    color: #06CAF8;
+    --hue: 0;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: hsl(var(--hue), 50%, 95%);
+    text-shadow:
+      0 0 15px hsl(var(--hue), 60%, 90%, .80),
+      0 0 20px hsl(var(--hue), 70%, 80%, .85),
+      0 0 40px hsl(var(--hue), 80%, 70%, .90),
+      0 0 60px hsl(var(--hue), 90%, 60%, .95),
+      0 0 80px hsl(var(--hue), 100%, 50%, 1)
+  }
+}

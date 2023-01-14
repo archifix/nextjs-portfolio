@@ -35,20 +35,22 @@ a {
   .container {
     padding: 0 32px;
   }
-  
+
   .sub-container {
     max-width: 833px;
   }
 }
 
 @media all and (max-width: 800px) {
-  .container, .sub-container {
+  .container,
+  .sub-container {
     padding: 0 25px;
   }
 }
 
 @media all and (max-width: 485px) {
-  .container, .sub-container {
+  .container,
+  .sub-container {
     padding: 0 16px;
   }
 }
@@ -126,7 +128,7 @@ a {
   height: 100vh;
   width: 100vw;
   z-index: -100;
-  background-color: #0F1839;
+  background-color: #0f1839;
   /*   background-size: cover; */
   /*   background-repeat: no-repeat; */
   overflow-x: hidden;
@@ -143,7 +145,12 @@ a {
 }
 
 #ball-one {
-  background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #08A6CE 0%, #6352B1 43.75%, #8B0EB7 68.75%);
+  background: radial-gradient(
+    142.65% 2282.99% at 100% -31.65%,
+    #08a6ce 0%,
+    #6352b1 43.75%,
+    #8b0eb7 68.75%
+  );
   height: 150px;
   width: 150px;
   position: absolute;
@@ -161,7 +168,12 @@ a {
 }
 
 #ball-two {
-  background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #08A6CE 0%, #6352B1 43.75%, #8B0EB7 68.75%);
+  background: radial-gradient(
+    142.65% 2282.99% at 100% -31.65%,
+    #08a6ce 0%,
+    #6352b1 43.75%,
+    #8b0eb7 68.75%
+  );
   height: 100px;
   width: 100px;
   position: absolute;
@@ -179,7 +191,12 @@ a {
 }
 
 #ball-three {
-  background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #08A6CE 0%, #6352B1 43.75%, #8B0EB7 68.75%);
+  background: radial-gradient(
+    142.65% 2282.99% at 100% -31.65%,
+    #08a6ce 0%,
+    #6352b1 43.75%,
+    #8b0eb7 68.75%
+  );
   height: 100px;
   width: 100px;
   left: 100px;
@@ -305,4 +322,4 @@ a {
   100% {
     transform: translate3d(77vw, 95vh, 0);
   }
-} 
+}

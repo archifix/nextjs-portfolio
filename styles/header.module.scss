@@ -12,6 +12,10 @@
     padding: 24px;
   }
 
+  @media all and (max-width: 485px) {
+    padding-top: 20px;
+  }
+
   &__container {
     display: flex;
     position: relative;
@@ -73,6 +77,12 @@
   }
 }
 
+.list_reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .burger_menu {
   width: 64px;
   height: 30px;
@@ -83,6 +93,10 @@
   border: none;
   margin: 0;
   padding: 0;
+
+  @media all and (max-width: 485px) {
+    height: 40px;
+  }
 }
 
 .burger_menu span {
@@ -104,6 +118,10 @@
   top: 13px;
   left: 0;
   opacity: 1;
+
+  @media all and (max-width: 485px) {
+    top: 17px;
+  }
 }
 
 .burger_menu span:nth-child(3) {
