@@ -5,7 +5,8 @@ import { useMediaQuery } from "@/hooks"
 import styles from "../../styles/hero.module.scss"
 
 const Hero = () => {
-  const isMobile = useMediaQuery(800)
+  const isMobile800 = useMediaQuery(800)
+  const isMobile485 = useMediaQuery(485)
   const heroTitle = useRef() as MutableRefObject<HTMLHeadElement>
 
   useEffect(() => {
@@ -19,7 +20,7 @@ const Hero = () => {
     const doRandom = () => {
       gsap
         .timeline()
-        .to("p", {
+        .to(heroTitle.current, {
           duration: 0.1,
           opacity: function () {
             return gsap.utils.random(0.9, 0.95)
@@ -28,7 +29,7 @@ const Hero = () => {
             return gsap.utils.random(0.1, 2)
           },
         })
-        .to("p", {
+        .to(heroTitle.current, {
           duration: 0.1,
           opacity: 1,
           onComplete: function () {
@@ -48,7 +49,11 @@ const Hero = () => {
   return (
     <section
       className={styles.hero}
-      style={{ backgroundImage: `url('/img/hero-bg.png')` }}
+      style={{
+        backgroundImage: isMobile485
+          ? ""
+          : `url('/img/hero-bg${isMobile800 ? "-mobile" : ""}.png')`,
+      }}
     >
       <div className="sub_container">
         <div className={styles.hero__inner}>
@@ -69,7 +74,7 @@ const Hero = () => {
           >
             Связаться с разработчиком
           </Link>
-          {!isMobile && (
+          {!isMobile800 && (
             <Link
               to="about"
               spy={true}
