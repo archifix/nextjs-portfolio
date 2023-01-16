@@ -24,4 +24,31 @@
       0 0 60px hsl(var(--hue), 90%, 60%, .95),
       0 0 80px hsl(var(--hue), 100%, 50%, 1)
   }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 84px;
+    max-width: 485px;
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: #F3F3F3;
+  }
+  &__btn {
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 128.9%;
+    color: #F2F2F2;
+    padding: 16px 32px;
+    background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #00C9FC 0%, #1A46EF 56.36%);
+    border-radius: 4px;
+
+    &:hover {
+      background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #08A6CE 0%, #6352B1 43.75%, #8B0EB7 68.75%);
+      border-radius: 4px;
+    }
+  }
 }
