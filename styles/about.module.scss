@@ -1,0 +1,15 @@
+.title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 48px;
+  color: #06CAF9;
+
+  &__border {
+    margin-top: 16px;
+    display: block;
+    height: 3px;
+    background: linear-gradient(89.99deg, #00D1FF 0%, rgba(255, 34, 141, 0) 100%);
+  }
+}
